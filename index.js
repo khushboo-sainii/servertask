@@ -7,10 +7,7 @@ import dotenv from 'dotenv';
 dotenv.config();
 
 const app = express();
-
 const PORT = process.env.PORT || 3000;
-
-
 
 // cors
 app.use(cors());
@@ -19,7 +16,6 @@ app.use(cors());
 app.use(express.json());
 
 // importing routes
-// const taskRoutes = require("./routes/taskRoutes");
 app.use("/api/v1", taskRoutes);
 
 // Catch-all for undefined routes
@@ -27,11 +23,7 @@ app.use(notFound);
 
 
 // database connectiona
-// const connectWithDb = require("./config/database");
 connectWithDb();
-
-
-
 
 // STARTING THE SERVER
 app.listen(PORT, () => {
