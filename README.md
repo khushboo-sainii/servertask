@@ -15,7 +15,7 @@ A secure, modular backend built with Express.js and MongoDB Atlas to power TaskF
 - 🧪 Postman-tested endpoints
 
 ## 📁 Folder Structure
-
+```
 servertask/
 ├── config/ # MongoDB connection setup 
 ├── controllers/ # Task logic (CRUD) 
@@ -23,7 +23,7 @@ servertask/
 ├── routes/ # API routes 
 ├── .env # Environment variables (excluded from Git) 
 ├── index.js # Entry point
-
+```
 
 ## 📦 Setup Instructions
 - git clone https://github.com/khushboo-sainii/servertask.git
